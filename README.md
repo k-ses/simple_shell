@@ -1,42 +1,3 @@
-Description
-This is a custom Unix Shell program for learning purposes was developed by cohort #0522 students:
-:w
-
-This simple_shell project is a simple UNIX command interpreter that replicates functionalities of the simple shell (sh). Additional functions are also included. This program was written entirely in C as a milestone project for ALX Africa Software Engineering.
-
-Installation
-Clone this repository into your working directory. For best results, files should be compiled with GCC and the following flags: -Wall -Wextra -Werror -pedantic -std=gnu89
-
-Usage
-After compilation, the resulting program can run stand-alone, either in interactive or non-interactive mode.
-
-Interactive Mode
-In interactive mode, simply run the program and wait for the prompt to appear. From there, you can type commands freely, exiting with either the "exit" command or ctrl-D.
-
-Non-Interactive Mode
-In non-interactive mode, echo your desired command and pipe it into the program like this:
-
-echo "ls" | ./shell
-0x16. C - Simple Shell
-By Julien Barbier
-
-Weight: 10
-
-Project to be done in teams of 2 people (your team: Morenikeji Omotara, Omobolaji Dawodu)
-
-Ongoing project - started Jul 27, 2022 6:00 AM, must end by Aug 11, 2022 6:00 AM
-
-You're done with 200% of tasks.
-
-Checker was released at Aug 10, 2022 1:12 AM
-
-An auto review will be launched at the deadline
-
-Concepts
-For this project, we expect you to look at these concepts:
-
-Everything you need to know to start coding your own shell
-Approaching a Project
 Background Context
 Write a simple UNIX command interpreter.
 
@@ -111,6 +72,7 @@ $ echo "qwerty" | ./hsh
 $ echo "qwerty" | ./././hsh
 ./././hsh: 1: qwerty: not found
 $
+
 List of allowed functions and system calls
 access (man 2 access)
 chdir (man 2 chdir)
@@ -167,4 +129,7 @@ $ cat test_ls_2
 $
 $ cat test_ls_2 | ./hsh
 hsh main.c shell.c test_ls_2
-hsh main
+hsh main.c shell.c test_ls_2
+$
+Checks
+OAOAOAThe Checker will be released at the end of the project (1-2 days before the deadline). We strongly encourage the entire class to work together to create a suite of checks covering both regular tests and edge cases for each task. See task 8. Test suite.
