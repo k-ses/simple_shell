@@ -1,6 +1,5 @@
 Background Context
-
-1.Write a simple UNIX command interpreter.
+Write a simple UNIX command interpreter.
 
 
 
