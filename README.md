@@ -36,4 +36,4 @@ write (man 2 write)
 Testing
 Your shell should work like this in interactive mode:
 
-Done by KELVIN AND SAMSON
+Done by KELVIN and SAMSON
