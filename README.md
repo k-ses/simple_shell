@@ -1,4 +1,4 @@
-0x16. C - Simple Shell
+This is our simple c shell team project
 
 List of allowed functions and system calls
 access (man 2 access)
@@ -32,8 +32,29 @@ waitpid (man 2 waitpid)
 wait3 (man 2 wait3)
 wait4 (man 2 wait4)
 write (man 2 write)
+Compilation
+Your shell will be compiled this way:
 
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 Testing
 Your shell should work like this in interactive mode:
 
-Done by KELVIN and SAMSON
+$ ./hsh
+($) /bin/ls
+hsh main.c shell.c
+($)
+($) exit
+$
+But also in non-interactive mode:
+
+$ echo "/bin/ls" | ./hsh
+hsh main.c shell.c test_ls_2
+$
+$ cat test_ls_2
+/bin/ls
+/bin/ls
+$
+$ cat test_ls_2 | ./hsh
+hsh main.c shell.c test_ls_2
+hsh main.c shell.c test_ls_2
+$

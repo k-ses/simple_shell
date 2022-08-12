@@ -108,14 +108,14 @@ The operators \fI&&\fR and \fI||\fR have equal precedence, followed by \fI;\fR.
 .RE
 
 .B Shellby Builtin Commands
-OAOAOA.in +2n
+.in +2n
 
-OAOAOA.RS
+.RS
 .B cd
-OAOAOA.RS
+.RS
 Usage: .B cd [DIRECTORY]
 
-OAOAOAChanges the current directory of the process to \fBDIRECTORY\fR.
+Changes the current directory of the process to \fBDIRECTORY\fR.
 
 If no argument is given, the command is interpreted as \fBcd $HOME\fR.
 
@@ -123,18 +123,18 @@ If the argument \fB-\fR is given, the command is interpreted as \fBcd $OLDPWD\fR
 
 The environment variables \fBPWD\fR and \fBOLDPWD\fR are updated after a change of directory.
 .RE
-
+OBOBOB
 .B alias
-.RS
+OBOBOB.RS
 Usage: \fBalias [NAME[='VALUE'] ...]\fR
-OAOAOA
+
 Handles aliases.
-OAOAOA
+OBOBOB
 .I alias\fR: Prints a list of all aliases, one per line, in the form \fINAME='VALUE'\fR.
 
-OAOAOA.I alias NAME [NAME2 ...]\fR: Prints the aliases \fINAME\fR, \fINAME2\fR, etc. one per line, in the form \fINAME='VALUE'\fR.
+.I alias NAME [NAME2 ...]\fR: Prints the aliases \fINAME\fR, \fINAME2\fR, etc. one per line, in the form \fINAME='VALUE'\fR.
 
-OAOAOA.I alias NAME='VALUE' [...]\fR: Defines an alias for each \fINAME\fR whose \fIVALUE\fR is given.
+.I alias NAME='VALUE' [...]\fR: Defines an alias for each \fINAME\fR whose \fIVALUE\fR is given.
 If \fIname\fR is already an alias, its value is replaced with \fIVALUE\fR.
 .RE
 
@@ -143,16 +143,16 @@ If \fIname\fR is already an alias, its value is replaced with \fIVALUE\fR.
 Usage: \fBexit [STATUS]\fR
 
 Exits the shell.
+OBOBOB
+OBOBOBThe \fBSTATUS\fR argument is the integer used to exit the shell.
 
-The \fBSTATUS\fR argument is the integer used to exit the shell.
-
-If no argument is given, the command is interpreted as \fBexit 0\fR.
+OBOBOBIf no argument is given, the command is interpreted as \fBexit 0\fR.
 .RE
 
 .B env
 .RS
 Usage: \fBenv\fR
-
+OBOBOB
 Prints the current environment.
 .RE
 
@@ -182,4 +182,4 @@ access(2), chdir(2), execve(2), _exit(2), exit(3), fflush(3), fork(2), free(3), 
 .B Shellby\fR emulates basic functionality of the \fBsh\fR shell.
 This man page borrows from the corresponding man pages sh(1) and dash(1).
 .SH AUTHORS
-Samson Kinyanjui and Kelvin Wachira.
+Samson Kinyanjui and Kelvin wachira
